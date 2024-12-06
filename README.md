@@ -1,2 +1,6 @@
 # AI-Powered-Travel-Companion
+The "AI-Powered Travel Companion" is a web-based platform that helps users plan trips tailored to their desired destination and budget. By simplifying travel planning, the system provides users with personalized itineraries and budget-friendly recommendations, ensuring a seamless and enjoyable travel experience.
+Users begin by entering their travel destination and budget into the platform. Based on this information, the system generates a virtual trip plan, including accommodation, transportation, activities, and dining options, all within the specified budget. A user profile and financial dashboard allow travelers to view and adjust their trip preferences, with the budget management system dynamically allocating funds across various trip components.
+An AI-powered interactive chatbot enhances the platform, offering travel advice, answering destination-related queries, and providing insights into the itinerary. The platform integrates real-time data from travel and accommodation APIs to ensure up-to-date and accurate planning options.
+This project combines generative AI and web development to create a practical solution for personalized travel planning. It eliminates the complexity of organizing trips, enabling users to make the most of their travel experiences while adhering to their financial constraints.
 
