@@ -1,0 +1,37 @@
+<!--2 input field that gathers informations like destination , number of days , total budget-->
+<!--2 buttons that allows user to submit or cancel the form-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2 class="title">Create Trip</h2><hr>
+    <div class="box d-flex justify-content-center">
+        <div class="alert alert-danger">
+          <a href="{{ url_for('home') }}" >Home</a>
+        </div>
+    </div>
+    <div class="box d-flex justify-content-center">
+        <div class="text-black w-25">
+            <form method="POST" action="/createtrip">
+                <div class="form-floating mb-3">
+                    <input type="text" name="destination" class="form-control" id="floatingInput" placeholder="Destination">
+                    <label for="floatingInput">Destination</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="number" name="days" class="form-control" id="floatingInput" placeholder="Number of Days">
+                    <label for="floatingInput">Number of Days</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="number" name="budget" class="form-control" id="floatingInput" placeholder="Total Budget">
+                    <label for="floatingInput">Total Budget</label>
+                </div>
+                <button class="btn btn-primary">Create Trip</button>
+            </form>
+        </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{% extends "basenav.html" %}
+{% block content %}
+    <h2>Welcome, {{ name }}</h2>
+    <h3>Your Trips</h3>
+    <div>
+        {% for trip in trips %}
+        <div class="trip-card">
+            <h4>{{ trip.destination }}</h4>
+            <p>Days: {{ trip.days }}</p>
+            <p>Budget: ${{ trip.budget }}</p>
+        </div>
+        {% else %}
+        <p>No trips yet. Create one now!</p>
+        {% endfor %}
+    </div>
+    <a href="{{ url_for('createtrip') }}">Create New Trip</a>
+
+
+{% endblock %}
