@@ -1,0 +1,22 @@
+{% extends 'basenav.html' %}
+
+{% block content %}
+<!-- Main Content -->
+<section>
+    <h1>Contact Us</h1>
+    <p>We would love to hear from you! Please fill out the form below to get in touch.</p>
+    <form action="#" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
+
+{% endblock %}

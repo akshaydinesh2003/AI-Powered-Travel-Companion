@@ -1,29 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI-Powered Travel Companion Services</title>
+{% extends 'basenav.html' %}
+{% block content %}
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-        }
-        .navbar {
-            background-color: #0056b3;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin-left: 15px;
-        }
         .features {
             max-width: 1200px;
             margin: 50px auto;
@@ -65,12 +42,6 @@
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <div>Welcome to AI-Powered Travel Companion</div>
-        <div>
-            <a href="#">Logout</a>
-        </div>
-    </div>
     <div class="features">
         <h1>Our Services</h1>
         <div class="features-container">
@@ -118,4 +89,4 @@
         </div>
     </div>
 </body>
-</html>
+{% endblock %}
