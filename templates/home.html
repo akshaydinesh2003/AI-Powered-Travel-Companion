@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - AI Travel & Finance Companion</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file -->
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <div class="nav-left">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-right">
+        <a href="{{ url_for('signup') }}" class="btn">Sign Up</a>
+        <a href="{{ url_for('login') }}" class="btn">Log In</a>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<header>
+    <h1>Welcome to AI-Powered Travel & Finance Companion</h1>
+    <p>Your ultimate guide to smarter travel and financial planning.</p>
+    <button onclick="window.location.href='signup.html'" class="btn">Get Started</button>
+</header>
+
+<section>
+    <h2>Features</h2>
+    <p>Plan personalized trips, manage your budget, and access real-time travel insights.</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 AI-Powered Travel & Finance Companion. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
