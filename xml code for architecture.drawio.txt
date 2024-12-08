@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile>
+  <diagram name="Component-Level Architecture">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- UI Layer -->
+        <mxCell id="UI" value="UI Layer" style="rounded=1;fillColor=#D9EAD3;strokeColor=#6AA84F;fontColor=#000;" vertex="1" parent="1">
+          <mxGeometry x="200" y="20" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="UI_Input" value="User Input Form" style="rounded=1;fillColor=#E3EFDA;" vertex="1" parent="UI">
+          <mxGeometry x="20" y="20" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UI_Itinerary" value="Itinerary Display" style="rounded=1;fillColor=#E3EFDA;" vertex="1" parent="UI">
+          <mxGeometry x="20" y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Backend Layer -->
+        <mxCell id="Backend" value="Backend Layer" style="rounded=1;fillColor=#FCE5CD;strokeColor=#E69138;fontColor=#000;" vertex="1" parent="1">
+          <mxGeometry x="200" y="150" width="180" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="API_Gateway" value="API Gateway" style="rounded=1;fillColor=#F7E0CD;" vertex="1" parent="Backend">
+          <mxGeometry x="20" y="20" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="User_Service" value="User Management Service" style="rounded=1;fillColor=#F7E0CD;" vertex="1" parent="Backend">
+          <mxGeometry x="20" y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- AI Layer -->
+        <mxCell id="AI" value="AI Layer" style="rounded=1;fillColor=#CFE2F3;strokeColor=#6D9EEB;fontColor=#000;" vertex="1" parent="1">
+          <mxGeometry x="200" y="380" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Chatbot" value="Chatbot Module" style="rounded=1;fillColor=#D9EDF7;" vertex="1" parent="AI">
+          <mxGeometry x="20" y="20" width="140" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Database Layer -->
+        <mxCell id="Database" value="Database Layer" style="rounded=1;fillColor=#FFF2CC;strokeColor=#F1C232;fontColor=#000;" vertex="1" parent="1">
+          <mxGeometry x="200" y="520" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="User_DB" value="User Database" style="rounded=1;fillColor=#FFF8DC;" vertex="1" parent="Database">
+          <mxGeometry x="20" y="20" width="140" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- External API Layer -->
+        <mxCell id="API" value="External API Layer" style="rounded=1;fillColor=#F4CCCC;strokeColor=#CC0000;fontColor=#000;" vertex="1" parent="1">
+          <mxGeometry x="400" y="150" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Travel_API" value="Travel API" style="rounded=1;fillColor=#F8D0D0;" vertex="1" parent="API">
+          <mxGeometry x="20" y="20" width="140" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Connections -->
+        <mxCell id="Connection1" edge="1" parent="1" source="UI" target="Backend">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Connection2" edge="1" parent="1" source="Backend" target="AI">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Connection3" edge="1" parent="1" source="Backend" target="Database">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Connection4" edge="1" parent="1" source="Backend" target="API">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
