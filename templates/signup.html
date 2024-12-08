@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h2 class="title">Sign Up</h2><hr>
+  <div class="box d-flex justify-content-center">
+        <div class="alert alert-danger">
+          <a href="{{ url_for('login') }}" >login page</a>
+        </div>
+  </div>
+  <div class="box d-flex justify-content-center">
+    <div class="text-black w-25">
+      <form method="POST" action="/signup">
+        <div class="form-floating mb-3">
+          <input type="email" name="email" class="form-control" id="floatingInput" 
+           placeholder="Email">
+          <label for="floatingInput">Email</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text" name="username" class="form-control" id="floatingInput" 
+           placeholder="Name">
+          <label for="floatingInput">Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" name="password" class="form-control" id="floatingInput" 
+           placeholder="Password">
+          <label for="floatingInput">Password</label>
+        </div>
+        <button class="btn btn-primary">Sign Up</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

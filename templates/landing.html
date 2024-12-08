@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started - AI Travel & Finance Companion</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming you use the same CSS file -->
+</head>
+<style>
+    
+/* Home page General Styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Navigation */
+nav {
+    background-color: #34495e;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    background-color: #1abc9c;
+}
+
+/* Main Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+    font-size: 28px;
+    color: #2c3e50;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.feature {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.feature p {
+    color: #7f8c8d;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    font-size: 28px;
+    color: #2c3e50;
+}
+
+.about p {
+    color: #7f8c8d;
+    font-size: 18px;
+}
+
+/* Call-to-Action Section */
+.cta {
+    text-align: center;
+    background-color: #1abc9c;
+    color: white;
+    padding: 50px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta h2 {
+    font-size: 32px;
+}
+
+.cta p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta button {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta button:hover {
+    background-color: #c0392b;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495e;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    .features {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav a {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .intro h2 {
+        font-size: 24px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+
+    .feature h3 {
+        font-size: 20px;
+    }
+
+    .feature p {
+        font-size: 16px;
+    }
+
+    .about h2 {
+        font-size: 24px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
+    .cta h2 {
+        font-size: 28px;
+    }
+
+    .cta p {
+        font-size: 16px;
+    }
+}
+
+/* Starting Page*/
+/* General Styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Navigation */
+nav {
+    background-color: #34495e;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    background-color: #1abc9c;
+}
+
+/* Main Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Get Started Section */
+.get-started {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.get-started h2 {
+    font-size: 28px;
+    color: #2c3e50;
+}
+
+.get-started p {
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+/* Form Container */
+.form-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.form-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.form-card h3 {
+    color: #2c3e50;
+}
+
+.form-card p {
+    color: #7f8c8d;
+}
+
+.form-card input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-card button {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.form-card button:hover {
+    background-color: #16a085;
+}
+
+/* CTA Section */
+.cta {
+    text-align: center;
+    background-color: #1abc9c;
+    color: white;
+    padding: 50px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta h2 {
+    font-size: 32px;
+}
+
+.cta p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta button {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta button:hover {
+    background-color: #c0392b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495e;
+    color: white;
+    margin-top: 40px;
+}
+</style>
+<body>
+
+<!-- Header Section -->
+<header>
+    <h1>AI-Powered Travel & Finance Companion</h1>
+    <p>Start your journey towards smarter travel and financial planning.</p>
+</header>
+
+<!-- Navigation Section (Optional, if you want the same nav across all pages) -->
+<nav>
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('about') }}">About</a>
+    <a href="{{ url_for('contact') }}">Contact</a>
+</nav>
+
+<!-- Main Content Section -->
+<div class="container">
+    <section class="get-started">
+        <h2>Welcome! Let's Get Started</h2>
+        <p>To begin, we need to know a bit about you. Please sign up or log in to continue.</p>
+
+        <div class="form-container">
+            <div class="form-card">
+                <h3>Sign Up</h3>
+                <p>Create an account to track your travel goals and finances.</p>
+                <form action="#" method="POST" onsubmit="handleFormSubmit(event)">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required placeholder="Enter your username">
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required placeholder="Create a password">
+                    
+                    <button type="submit" class="btn-primary">Sign Up</button>
+                </form>
+                
+                <script>
+                    function handleFormSubmit(event) {
+                        event.preventDefault();  // Prevent form from submitting the usual way
+                
+                        // Optionally, you can perform form validation or other logic here
+                
+                        // Redirect to the login page after form submission
+                        window.location.href = 'login.html';
+                    }
+                </script>
+                
+
+            </div>
+
+            <div class="form-card">
+                <h3>Log In</h3>
+                <p>If you already have an account, log in here.</p>
+                <form action="#" method="POST">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="email" required placeholder="Enter your email">
+                    
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="password" required placeholder="Enter your password">
+                    
+                    <a href=""><button type="submit" class="btn-primary">Log In</button></a>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Call-to-Action (CTA) Section -->
+<section class="cta">
+    <h2>Ready to Plan Your Dream Vacation?</h2>
+    <p>Let us guide you to your perfect travel destinations and help you manage your finances on the go!</p>
+    <button onclick="window.location.href='bbasic.html'">Go Back to Home</button>
+</section>
+<!--spring works-->
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 AI-Powered Travel & Finance Companion. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
