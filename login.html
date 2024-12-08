@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css"> <!-- External CSS file for styling -->
+</head>
+<body>
+    <header>
+        <h1>Welcome Back!</h1>
+        <p>Please log in to continue to your account.</p>
+    </header>
+
+    <!-- Main Container -->
+    <div class="login-container">
+        <div class="login-card">
+            <h2>Login</h2>
+            <form action="dashboard.html" method="POST">
+                <!-- Redirect to a dashboard or homepage after successful login -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+
+                <button type="submit" class="btn-login">Log In</button>
+            </form>
+
+            <p class="signup-redirect">
+                Don't have an account? <a href="starting.html">Sign Up</a>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>

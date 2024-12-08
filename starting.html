@@ -31,7 +31,7 @@
             <div class="form-card">
                 <h3>Sign Up</h3>
                 <p>Create an account to track your travel goals and finances.</p>
-                <form action="#" method="POST">
+                <form action="#" method="POST" onsubmit="handleFormSubmit(event)">
                     <label for="username">Username:</label>
                     <input type="text" id="username" name="username" required placeholder="Enter your username">
                     
@@ -43,6 +43,19 @@
                     
                     <button type="submit" class="btn-primary">Sign Up</button>
                 </form>
+                
+                <script>
+                    function handleFormSubmit(event) {
+                        event.preventDefault();  // Prevent form from submitting the usual way
+                
+                        // Optionally, you can perform form validation or other logic here
+                
+                        // Redirect to the login page after form submission
+                        window.location.href = 'login.html';
+                    }
+                </script>
+                
+
             </div>
 
             <div class="form-card">
@@ -66,8 +79,9 @@
 <section class="cta">
     <h2>Ready to Plan Your Dream Vacation?</h2>
     <p>Let us guide you to your perfect travel destinations and help you manage your finances on the go!</p>
-    <button onclick="window.location.href='index.html'">Go Back to Home</button>
+    <button onclick="window.location.href='bbasic.html'">Go Back to Home</button>
 </section>
+<!--spring works-->
 
 <!-- Footer -->
 <footer>
