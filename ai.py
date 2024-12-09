@@ -1,17 +1,22 @@
+
 import openai
 
 # Set your OpenAI API key
-openai.api_key = 'your-api-key-here'
+openai.api_key = ''
 
-def get_chatgpt_response(prompt):
-    response = openai.Completion.create(
-        engine="text-davinci-003",
-        prompt=prompt,
-        max_tokens=150
-    )
-    return response.choices[0].text.strip()
+# Define your question
+question = "create a detailed 5 day trip plan with a budget of $5000 for a family of 4 in New York City"
 
-if __name__ == "__main__":
-    user_prompt = input("Enter your prompt: ")
-    response = get_chatgpt_response(user_prompt)
-    print("ChatGPT Response:", response)
+# Create a response using the updated model
+response = openai.ChatCompletion.create(
+    model="gpt-3.5-turbo",  # Use gpt-3.5-turbo or gpt-4
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": question}
+    ],
+    max_tokens=100
+)
+
+# Extract and print the response
+trip_plan = response['choices'][0]['message']['content'].strip()
+print(trip_plan)
